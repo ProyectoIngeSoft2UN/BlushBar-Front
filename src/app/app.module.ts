@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { navbarComponent } from './navbar/app.navbarComponent';
 import { headerComponent } from './header/app.headerComponent';
 import { blockComponent } from './header/block/app.blockComponent';
+import { footerComponent } from './footer/app.footerComponent';
 
 @NgModule({
   declarations: [
