@@ -21,6 +21,6 @@ import { blockComponent } from './header/block/app.blockComponent';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, navbarComponent]
 })
 export class AppModule { }
