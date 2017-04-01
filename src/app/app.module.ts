@@ -3,12 +3,15 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { routes } from './app.router'
+
 import { AppComponent } from './app.component';
 import { navbarComponent } from './navbar/app.navbarComponent';
 import { headerComponent } from './header/app.headerComponent';
 import { blockComponent } from './header/block/app.blockComponent';
-import { footerComponent } from './footer/app.footerComponent';
 import { InfoComponent } from './info/info.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,12 +19,15 @@ import { InfoComponent } from './info/info.component';
     navbarComponent,
     headerComponent,
     blockComponent,
-    InfoComponent
+    InfoComponent,
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routes
   ],
   providers: [],
   bootstrap: [AppComponent, navbarComponent]
