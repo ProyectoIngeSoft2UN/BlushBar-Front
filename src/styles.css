@@ -162,8 +162,21 @@ h6 {
 }
 
 footer {
+    height: 220px;
     padding: 50px 0;
-    background-color: #f8f8f8;
+
+    background: url(./app/footer/img/FooterRedNoise.png) no-repeat left center;
+}
+
+footer div div {
+  border-style: solid;
+  border-width: 0px 0px 0px 5px;
+  border-color: #ffcccc;
+  height: 2200;
+}
+
+#block {
+  color: black;
 }
 
 p.copyright {
