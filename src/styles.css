@@ -24,15 +24,6 @@ h6 {
   border: none;
 }
 
-#map{
-	margin-top: 100px;
-	position: absolute;
-	height: 85%;
-	width: 65%;
-	padding: 0px;
-	display: block;
-}
-
 .lead {
     font-size: 18px;
     font-weight: 400;
