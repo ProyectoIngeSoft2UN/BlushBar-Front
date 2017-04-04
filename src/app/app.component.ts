@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { navbarComponent } from './navbar/app.navbarComponent';
 import { headerComponent } from './header/app.headerComponent';
+import { MapComponent } from './map/app.map';
 import { blockComponent } from './header/block/app.blockComponent';
+
 
 @Component({
   selector: 'app-root',
