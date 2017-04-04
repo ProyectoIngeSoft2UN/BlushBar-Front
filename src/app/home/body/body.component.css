@@ -5,3 +5,7 @@ div.back {
   height: 350px;
   text-align: center;
 }
+
+p a {
+	color: #ff80aa;
+}
