@@ -12,6 +12,7 @@ import { blockComponent } from './header/block/app.blockComponent';
 import { InfoComponent } from './info/info.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { BodyComponent } from './home/body/body.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HomeComponent } from './home/home.component';
     blockComponent,
     InfoComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    BodyComponent
   ],
   imports: [
     BrowserModule,
