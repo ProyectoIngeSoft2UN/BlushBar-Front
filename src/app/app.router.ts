@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router'
 
 import { AppComponent } from './app.component'
 import { InfoComponent } from './info/info.component'
+import { HomeComponent } from './home/home.component'
 import { adminsComponent } from './admins/app.adminsComponent'
 import { appointmentsComponent } from './appointments/app.appointmentsComponent'
 import { categoriesComponent } from './categories/app.categoriesComponent'
