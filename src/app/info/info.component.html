@@ -1,20 +1,71 @@
-  <div ng-controller="UserController">
-    <form name="userForm" novalidate>
-      <label for="name">Nombre</label><br />
-      <input name="name" type="text" ng-model="user.name" />
-      <br />
-      <label for="email">Email</label><br />
-      <input name="email" type="email" ng-model="user.email" />
-      <br />
-      <label for="gender">Género</label><br />
-      <input name="gender" type="radio" ng-model="user.gender" value="male" />Masculino
-      <input name="gender" type="radio" ng-model="user.gender" value="female" />Femenino
-      <br />
-      <label for="age">Edad</label><br />
-      <input name="age" type="number" ng-model="user.age" />
-
-      <br /><br />
-      <input type="button" ng-click="reset()" value="Limpiar" />
-      <input type="submit" ng-click="update()" value="Guardar" />
-    </form>
+<!-- <div class="content-section-a" style="margin-top: 50px">
+  <div class="leftBox">
+     <div class="formStatic">
+        <p>¿Tienes alguna duda, sugerencia o comentario sobre <span class="txtLogo">Blush-Bar</span>?</p>
+        <p>Diligencia el siguiente formulario y pronto un asesor de servicio al cliente estará en contacto contigo.</p>
+        <form class="formularioContactenos" novalidate="novalidate">
+           <input id="ct-nombre" name="ct-nombre" type="text" placeholder="Nombre">
+           <input id="ct-email" name="ct-email" type="text" placeholder="E-mail">
+           <textarea id="ct-mensaje" name="ct-mensaje" rows="3" placeholder="Mensaje "></textarea>
+           <button type="submit">ENVIAR</button>
+        </form>
+      </div>
   </div>
+</div> -->
+
+<div class="content-section-a" style="margin-top: 50px">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
+
+                <form role="form">
+                  <div class="form-group">
+                    <label for="ejemplo_email_1">Nombre</label>
+                    <input type="email" class="form-control" id="ejemplo_email_1"
+                           placeholder="Introduce tu nombre">
+                  </div>
+                  <div class="form-group">
+                    <label for="ejemplo_password_1">Email</label>
+                    <input type="password" class="form-control" id="ejemplo_password_1" 
+                           placeholder="Introduce tu email">
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio"> Hombre
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio"> Mujer
+                    </label>
+                  </div>
+                  <button class="btn btn-default">Guardar</button>
+                  <button class="btn btn-default">Limpiar</button>
+                </form>
+<!--                 <div ng-controller="UserController">
+                  <form name="userForm" novalidate>
+                    <input name="name" type="text" ng-model="user.name" placeholder="nombre"/>
+                    <br />
+                    <input name="email" type="email" ng-model="user.email" placeholder="Email" />
+                    <br />
+                    <input name="gender" type="radio" ng-model="user.gender" value="male" />Masculino
+                    <input name="gender" type="radio" ng-model="user.gender" value="female" />Femenino
+                    <br />
+                    <input name="age" type="number" ng-model="user.age" placeholder="Edad" />
+
+                    <br /><br />
+                    <input type="button" ng-click="reset()" value="Limpiar" />
+                    <input type="submit" ng-click="update()" value="Guardar" />
+                  </form>
+                </div> -->
+            </div>
+            <div class="col-lg-5 col-sm-pull-6 col-sm-6">
+                <img class="img-responsive" src="http://blushbar.vteximg.com.br/arquivos/Claudia-Lloreda-Fundadora-Directora-General.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
