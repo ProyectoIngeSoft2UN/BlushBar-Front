@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { BodyComponent } from './home/body/body.component';
 import { MakeUpComponent } from './make-up/make-up.component';
+import { AccessoriesComponent } from './accessories/accessories.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MakeUpComponent } from './make-up/make-up.component';
     FooterComponent,
     HomeComponent,
     BodyComponent,
-    MakeUpComponent
+    MakeUpComponent,
+    AccessoriesComponent
   ],
   imports: [
     BrowserModule,
