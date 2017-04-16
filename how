@@ -1,0 +1,71 @@
+[33ma78d896[m HEAD@{0}: pull origin development: Fast-forward
+[33m63e369e[m HEAD@{1}: commit: mergeFeature
+[33mc3b91f1[m HEAD@{2}: merge features: Fast-forward
+[33m4f69166[m HEAD@{3}: checkout: moving from features to development
+[33mc3b91f1[m HEAD@{4}: commit: getJSON forom rails
+[33m69d7d62[m HEAD@{5}: commit: services, observables and requesthttp
+[33mdc28796[m HEAD@{6}: commit: add routes
+[33m4f69166[m HEAD@{7}: checkout: moving from development to features
+[33m4f69166[m HEAD@{8}: commit: component makeUp
+[33maf7f3d8[m HEAD@{9}: checkout: moving from moreChanges to development
+[33maf7f3d8[m HEAD@{10}: checkout: moving from development to moreChanges
+[33maf7f3d8[m HEAD@{11}: commit: update
+[33m82f6525[m HEAD@{12}: pull origin development: Fast-forward
+[33me1b2dec[m HEAD@{13}: checkout: moving from bodyFeat to development
+[33m4b8411b[m HEAD@{14}: checkout: moving from mergeMapIt to bodyFeat
+[33mb686cd3[m HEAD@{15}: commit: merge and fixed map feature
+[33mda3183e[m HEAD@{16}: pull origin featuremapalt: Merge made by the 'recursive' strategy.
+[33m4b8411b[m HEAD@{17}: checkout: moving from bodyFeat to mergeMapIt
+[33m4b8411b[m HEAD@{18}: checkout: moving from mergeMap to bodyFeat
+[33mf702693[m HEAD@{19}: checkout: moving from featuremapalt to mergeMap
+[33mf702693[m HEAD@{20}: checkout: moving from bodyFeat to featuremapalt
+[33m4b8411b[m HEAD@{21}: pull origin bodyFeat: Fast-forward
+[33mf1c875f[m HEAD@{22}: commit (merge): merge whit development and comopnent body
+[33mb3e7ec9[m HEAD@{23}: checkout: moving from development to bodyFeat
+[33me1b2dec[m HEAD@{24}: checkout: moving from bodyFeat to development
+[33mb3e7ec9[m HEAD@{25}: commit: changed body
+[33m1739046[m HEAD@{26}: checkout: moving from development to bodyFeat
+[33me1b2dec[m HEAD@{27}: checkout: moving from bodyFeat to development
+[33m1739046[m HEAD@{28}: commit: make components body
+[33me1b2dec[m HEAD@{29}: checkout: moving from development to bodyFeat
+[33me1b2dec[m HEAD@{30}: merge footerFeat: Fast-forward
+[33m124318d[m HEAD@{31}: checkout: moving from footerFeat to development
+[33me1b2dec[m HEAD@{32}: commit: make footer
+[33m124318d[m HEAD@{33}: checkout: moving from development to footerFeat
+[33m124318d[m HEAD@{34}: commit (merge): fixed test
+[33mf8e2719[m HEAD@{35}: commit (merge): Fixed footer
+[33mdf4b337[m HEAD@{36}: rebase -i (finish): returning to refs/heads/development
+[33mdf4b337[m HEAD@{37}: rebase -i (continue): update footer
+[33m3ccae11[m HEAD@{38}: rebase -i (pick): icon changed
+[33mb055136[m HEAD@{39}: rebase -i (pick): routing
+[33m2781fc9[m HEAD@{40}: rebase -i (start): checkout 2781fc91db0c228464d184ef204690e8f5dd6a66
+[33mde3e280[m HEAD@{41}: merge icoFeature: Fast-forward
+[33m1b8b375[m HEAD@{42}: checkout: moving from icoFeature to development
+[33mde3e280[m HEAD@{43}: checkout: moving from icoFeature to icoFeature
+[33mde3e280[m HEAD@{44}: commit: update footer
+[33mfa03293[m HEAD@{45}: commit: check
+[33m0651819[m HEAD@{46}: commit: check
+[33m1b8b375[m HEAD@{47}: checkout: moving from development to icoFeature
+[33m1b8b375[m HEAD@{48}: checkout: moving from icoFeature to development
+[33m1b8b375[m HEAD@{49}: checkout: moving from development to icoFeature
+[33m1b8b375[m HEAD@{50}: merge icoFeature: Fast-forward
+[33m9dcd7cd[m HEAD@{51}: checkout: moving from icoFeature to development
+[33m1b8b375[m HEAD@{52}: commit: icon changed
+[33m9dcd7cd[m HEAD@{53}: checkout: moving from development to icoFeature
+[33m9dcd7cd[m HEAD@{54}: merge routingFeature: Fast-forward
+[33m64f411c[m HEAD@{55}: checkout: moving from routingFeature to development
+[33m9dcd7cd[m HEAD@{56}: commit: routing
+[33m64f411c[m HEAD@{57}: checkout: moving from development to routingFeature
+[33m64f411c[m HEAD@{58}: commit: test
+[33m2781fc9[m HEAD@{59}: checkout: moving from master to development
+[33m17262fc[m HEAD@{60}: checkout: moving from merge to master
+[33m2781fc9[m HEAD@{61}: checkout: moving from development to merge
+[33m2781fc9[m HEAD@{62}: checkout: moving from merge to development
+[33m2781fc9[m HEAD@{63}: checkout: moving from development to merge
+[33m2781fc9[m HEAD@{64}: commit: Final merge
+[33mf678c47[m HEAD@{65}: commit (merge): ps
+[33m2eac3fa[m HEAD@{66}: commit: premerge
+[33m9526144[m HEAD@{67}: commit (merge): fixed conflicts
+[33mb3045a7[m HEAD@{68}: commit: Navbar and header
+[33m17262fc[m HEAD@{69}: checkout: moving from master to development
+[33m17262fc[m HEAD@{70}: clone: from https://github.com/ProyectoIngeSoft2UN/BlushBar-Front.git
