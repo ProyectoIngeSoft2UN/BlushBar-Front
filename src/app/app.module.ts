@@ -15,6 +15,8 @@ import { HomeComponent } from './home/home.component';
 import { BodyComponent } from './home/body/body.component';
 import { MakeUpComponent } from './make-up/make-up.component';
 import { AccessoriesComponent } from './accessories/accessories.component';
+import { ProductComponent } from './product/product.component';
+import { ProductService } from './product/product.service'
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { AccessoriesComponent } from './accessories/accessories.component';
     HomeComponent,
     BodyComponent,
     MakeUpComponent,
-    AccessoriesComponent
+    AccessoriesComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,9 @@ import { AccessoriesComponent } from './accessories/accessories.component';
     HttpModule,
     routes
   ],
-  providers: [],
+  providers: [
+    ProductService
+  ],
   bootstrap: [AppComponent, navbarComponent]
 })
 export class AppModule { }
