@@ -11,9 +11,16 @@ import { ProductService } from '../product/product.service';
 })
 export class MakeUpComponent implements OnInit {
 
-  constructor() { }
+  products: Product[];
+  constructor(private productService: ProductService) { }
 
   ngOnInit() {
+    let timer = Observable.timer(0, 5000);
+    timer.subscribe(() => this.getProducts())
+  }
+
+  getProducts(){
+    this.productService.getProducts().subscribe(products => this.products = products);
   }
 
 }
