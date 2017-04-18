@@ -1,3 +1,38 @@
-<p>
-  fragances works!
-</p>
+<div class="product" *ngFor="let product of products">
+  <div *ngIf="product.category_id == 5">
+  <div class="container">
+    <div class="row row-content">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="thumbnail media">
+          <img class="media-object img-thumbnail img-circle" src="" alt="...">
+          <div class="caption">
+            <div class="media-body media-center">
+              <h2 class="media-heading">{{product.name}} </h2>
+              <p>{{product.description}}</p>
+              <p> ${{product.cost}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="product.category_id == 6">
+<div class="container">
+  <div class="row row-content">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="thumbnail media">
+        <img class="media-object img-thumbnail img-circle" src="" alt="...">
+        <div class="caption">
+          <div class="media-body media-center">
+            <h2 class="media-heading">{{product.name}} </h2>
+            <p>{{product.description}}</p>
+            <p> ${{product.cost}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
