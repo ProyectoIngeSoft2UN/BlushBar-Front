@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { routes } from './app.router'
+import { routes } from './app.router';
 
 import { AppComponent } from './app.component';
 import { navbarComponent } from './navbar/app.navbarComponent';
@@ -17,7 +17,10 @@ import { MakeUpComponent } from './make-up/make-up.component';
 import { AccessoriesComponent } from './accessories/accessories.component';
 import { ProductComponent } from './product/product.component';
 import { ProductService } from './product/product.service';
-import { ServiceComponent } from './service/service.component'
+import { SkinCareComponent } from './skin-care/skin-care.component';
+import { FragancesComponent } from './fragances/fragances.component';
+import { BodyCareComponent } from './body-care/body-care.component';
+import { ServicesComponent } from './services/services.component'
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { ServiceComponent } from './service/service.component'
     MakeUpComponent,
     AccessoriesComponent,
     ProductComponent,
-    ServiceComponent
+    SkinCareComponent,
+    FragancesComponent,
+    BodyCareComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
