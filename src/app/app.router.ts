@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { MakeUpComponent } from './make-up/make-up.component';
 import { AccessoriesComponent } from './accessories/accessories.component';
 import { ProductComponent } from './product/product.component';
+import { ServiceComponent } from './service/service.component';
 
 export const router: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -16,7 +17,8 @@ export const router: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'make-up', component: MakeUpComponent },
   { path: 'accessories', component: AccessoriesComponent },
-  { path: 'product', component: ProductComponent }
+  { path: 'product', component: ProductComponent },
+  { path: 'service', component: ServiceComponent }
 ];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);

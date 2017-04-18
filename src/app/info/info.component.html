@@ -1,4 +1,4 @@
-<div class="container" ng-app="formLabs">
+<!--<div class="container" ng-app="formLabs">
   <div ng-controller="UserController">
     <form name="userForm" novalidate>
       <label for="name">Nombre</label><br />
@@ -20,4 +20,43 @@
     </form>
   </div>
 
+</div>
+-->
+
+<div class="content-section-a">
+   <div class="container">
+        <div class="row">
+             <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
+
+                 <form role="form">
+                   <div class="form-group">
+                     <label for="ejemplo_email_1">Nombre</label>
+                     <input type="text" class="form-control" id="ejemplo_email_1"
+                            placeholder="Introduce tu nombre">
+                   </div>
+                   <div class="form-group">
+                     <label for="ejemplo_password_1">Email</label>
+                     <input type="email" class="form-control" id="ejemplo_password_1"
+                            placeholder="Introduce tu email">
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input type="radio" ng-model="user.gender" value="male"> Hombre
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input type="radio" ng-model="user.gender" value="female"> Mujer
+                     </label>
+                   </div>
+                   <button class="btn btn-default" ng-click="update()">Guardar</button>
+                   <button class="btn btn-default" ng-click="reset()">Limpiar</button>
+                 </form>
+             </div>
+             <div class="col-lg-5 col-sm-pull-6 col-sm-6">
+                 <img class="img-responsive" src="http://blushbar.vteximg.com.br/arquivos/Claudia-Lloreda-Fundadora-Directora-General.jpg" alt="">
+             </div>
+         </div>
+
+     </div>
 </div>

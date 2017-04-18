@@ -18,7 +18,7 @@ import { AccessoriesComponent } from './accessories/accessories.component';
 import { ProductComponent } from './product/product.component';
 import { ProductService } from './product/product.service';
 import { ServiceComponent } from './service/service.component'
-
+import { ServiceService } from './service/service.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +41,8 @@ import { ServiceComponent } from './service/service.component'
     routes
   ],
   providers: [
-    ProductService
+    ProductService,
+    ServiceService
   ],
   bootstrap: [AppComponent, navbarComponent]
 })
