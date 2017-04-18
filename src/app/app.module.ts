@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { routes } from './app.router'
+import { routes } from './app.router';
 
 import { AppComponent } from './app.component';
 import { navbarComponent } from './navbar/app.navbarComponent';
@@ -19,6 +19,9 @@ import { ProductComponent } from './product/product.component';
 import { ProductService } from './product/product.service';
 import { ServiceComponent } from './service/service.component'
 import { ServiceService } from './service/service.service';
+import { SkinCareComponent } from './skin-care/skin-care.component';
+import { FragancesComponent } from './fragances/fragances.component';
+import { BodyCareComponent } from './body-care/body-care.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +35,9 @@ import { ServiceService } from './service/service.service';
     MakeUpComponent,
     AccessoriesComponent,
     ProductComponent,
+    SkinCareComponent,
+    FragancesComponent,
+    BodyCareComponent,
     ServiceComponent
   ],
   imports: [

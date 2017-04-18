@@ -1,3 +1,4 @@
+
 <!--<div class="container" ng-app="formLabs">
   <div ng-controller="UserController">
     <form name="userForm" novalidate>
@@ -14,12 +15,34 @@
       <label for="age">Edad</label><br />
       <input name="age" type="number" ng-model="user.age" />
 
-      <br /><br />
-      <input type="button" ng-click="reset()" value="Limpiar" />
-      <input type="submit" ng-click="update()" value="Guardar" />
-    </form>
-  </div>
+                 <form role="form">
+                   <div class="form-group">
+                     <label for="ejemplo_email_1">Nombre</label>
+                     <input type="text" class="form-control" id="ejemplo_email_1"
+                            placeholder="Introduce tu nombre">
+                   </div>
+                   <div class="form-group">
+                     <label for="ejemplo_password_1">Email</label>
+                     <input type="email" class="form-control" id="ejemplo_password_1"
+                            placeholder="Introduce tu email">
+                   </div>
+                   <div class="form-group">
+                     <label for="ejemplo_message_1">Mensaje</label>
+                     <input type="textarea" class="form-control" id="ejemplo_message_1"
+                            placeholder="¿Tienes alguna duda, sugerencia o comentario sobre Blush-Bar?">
+                     <textarea name="comentarios" class="form-control" rows="10" cols="54" placeholder="¿Tienes alguna duda, sugerencia o comentario sobre Blush-Bar?"></textarea>
+                   </div>
 
+                   <button class="btn btn-default" ng-click="update()">Guardar</button>
+                   <button class="btn btn-default" ng-click="reset()">Limpiar</button>
+                 </form>
+             </div>
+             <div class="col-lg-5 col-sm-pull-6 col-sm-6">
+                 <img class="img-responsive" src="./src/app/info/img/fachadaBB.jpg" alt="">
+             </div>
+         </div>
+
+     </div>
 </div>
 -->
 
