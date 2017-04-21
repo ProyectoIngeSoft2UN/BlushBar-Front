@@ -10,16 +10,16 @@ import { ProductService } from '../product/product.service';
   styleUrls: ['./fragances.component.css']
 })
 export class FragancesComponent implements OnInit {
-products: Product[];
-constructor(private productService: ProductService) { }
+  products: Product[];
+  constructor(private productService: ProductService) { }
 
-ngOnInit() {
-  let timer = Observable.timer(0, 5000);
-  timer.subscribe(() => this.getProducts())
-}
+  ngOnInit() {
+    let timer = Observable.timer(0, 5000);
+    timer.subscribe(() => this.getProducts())
+  }
 
-getProducts(){
-  this.productService.getProducts().subscribe(products => this.products = products);
-}
+  getProducts(){
+    this.productService.getProducts().subscribe(products => this.products = products);
+  }
 
 }
