@@ -1,5 +1,5 @@
 <div class="product" *ngFor="let product of products">
-  <div *ngIf="product.category_id == 5">
+  <div>
   <div class="container">
     <div class="row row-content">
       <div class="col-xs-12 col-sm-6 col-md-4">
@@ -10,6 +10,7 @@
               <h2 class="media-heading">{{product.name}} </h2>
               <p>{{product.description}}</p>
               <p> ${{product.cost}}</p>
+              <p>{{product.images}}</p>
             </div>
           </div>
         </div>
@@ -17,7 +18,7 @@
     </div>
   </div>
 </div>
-<div *ngIf="product.category_id == 8">
+<div >
 <div class="container">
   <div class="row row-content">
     <div class="col-xs-12 col-sm-6 col-md-4">
