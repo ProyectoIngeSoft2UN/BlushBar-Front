@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import {CalendarComponent} from "ap-angular2-fullcalendar/src/calendar/calendar";//acá editó Juliana
+import { CalendarComponent } from "ap-angular2-fullcalendar/src/calendar/calendar";//acá editó Juliana
 
 import { routes } from './app.router';
 
