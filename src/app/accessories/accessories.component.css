@@ -1,0 +1,17 @@
+.container {
+	margin-top: 50px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  align-content: center;
+}
+.caption {
+  text-align: center;
+}
+
+
+.thumbnail {
+  border-style: none;
+}
