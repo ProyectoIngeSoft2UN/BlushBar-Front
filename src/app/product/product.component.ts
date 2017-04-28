@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs/Rx';
 import { Product } from './product';
 import { ProductService } from './product.service';
@@ -10,7 +11,10 @@ import { ProductService } from './product.service';
 })
 export class ProductComponent implements OnInit {
   products: Product[];
-  constructor(private productService: ProductService) { }
+  constructor(
+    private productService: ProductService,
+    private router: Router
+  ) { }
 
   ngOnInit() {
     let timer = Observable.timer(0, 5000);
@@ -21,4 +25,8 @@ export class ProductComponent implements OnInit {
     this.productService.getProducts().subscribe(products => this.products = products);
   }
 
+  goToShow(product: Product): void{
+    let productLink = ['/products', product.id];
+    this.router.navigate(productLink);
+  }
 }

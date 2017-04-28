@@ -1,9 +1,7 @@
-<div class="container">
-  <div class="row row-content">
-    <div class="product" *ngFor="let product of products">
-      <div class="col-xs-12 col-sm-6">
-        <div *ngIf="product.subcategory_id == 8">
-          <a (click)="goToShow(product)">
+<div *ngIf="product">
+  <div class="container">
+    <div class="row row-content">
+        <div class="col-xs-12 col-sm-6">
             <div class="thumbnail media">
               <img class="media-object img-thumbnail" src="./src/app/info/img/fachadaBB.jpg" alt="...">
               <div class="caption">
@@ -14,8 +12,7 @@
                 </div>
               </div>
             </div>
-          </a>
         </div>
-      </div>
   </div>
+
 </div>
