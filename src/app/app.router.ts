@@ -11,6 +11,8 @@ import { ServiceComponent } from './service/service.component';
 import { BodyCareComponent } from './body-care/body-care.component';
 import { FragancesComponent } from './fragances/fragances.component';
 import { SkinCareComponent } from './skin-care/skin-care.component';
+import { AgendaComponent } from './agenda/agenda.component'; //Editó Juliana
+
 
 export const router: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -22,7 +24,8 @@ export const router: Routes = [
   { path: 'service', component: ServiceComponent },
   { path: 'body-care', component: BodyCareComponent },
   { path: 'fragances', component: FragancesComponent },
-  { path: 'skin-care', component: SkinCareComponent }
+  { path: 'skin-care', component: SkinCareComponent },
+  { path: 'agenda', component: AgendaComponent } //Editó Juliana
 ];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);

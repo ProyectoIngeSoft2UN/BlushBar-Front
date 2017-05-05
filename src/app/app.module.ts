@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { CalendarComponent } from "ap-angular2-fullcalendar/src/calendar/calendar";//acá editó Juliana
 
 import { routes } from './app.router';
 
@@ -22,9 +23,12 @@ import { ServiceService } from './service/service.service';
 import { SkinCareComponent } from './skin-care/skin-care.component';
 import { FragancesComponent } from './fragances/fragances.component';
 import { BodyCareComponent } from './body-care/body-care.component';
+import { AgendaComponent } from './agenda/agenda.component';
+
 @NgModule({
   declarations: [
     AppComponent,
+    CalendarComponent,//acá editó Juliana
     navbarComponent,
     headerComponent,
     blockComponent,
@@ -38,7 +42,8 @@ import { BodyCareComponent } from './body-care/body-care.component';
     SkinCareComponent,
     FragancesComponent,
     BodyCareComponent,
-    ServiceComponent
+    ServiceComponent,
+    AgendaComponent
   ],
   imports: [
     BrowserModule,
