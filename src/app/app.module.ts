@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { routes } from './app.router';
+import { AppRoutingModule } from './app.router';
 
 import { AppComponent } from './app.component';
 import { navbarComponent } from './navbar/app.navbarComponent';
@@ -47,8 +47,8 @@ import { BodyCareComponent } from './body-care/body-care.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    routes
+    AppRoutingModule,
+    HttpModule
   ],
   providers: [
     ProductService,

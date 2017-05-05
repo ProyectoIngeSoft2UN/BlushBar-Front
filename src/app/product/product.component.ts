@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Observable } from 'rxjs/Rx';
 import { Product } from './product';
 import { ProductService } from './product.service';
@@ -26,7 +26,6 @@ export class ProductComponent implements OnInit {
   }
 
   goToShow(product: Product): void{
-    let productLink = ['/products', product.id];
-    this.router.navigate(productLink);
+    this.router.navigate(['/products', product.id]);
   }
 }

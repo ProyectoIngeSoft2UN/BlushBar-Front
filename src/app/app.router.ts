@@ -1,3 +1,4 @@
+import { NgModule } from '@angular/core';
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -14,7 +15,7 @@ import { BodyCareComponent } from './body-care/body-care.component';
 import { FragancesComponent } from './fragances/fragances.component';
 import { SkinCareComponent } from './skin-care/skin-care.component';
 
-export const router: Routes = [
+const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'info', component: InfoComponent },
   { path: 'home', component: HomeComponent },
@@ -29,4 +30,12 @@ export const router: Routes = [
   { path: 'skin-care', component: SkinCareComponent }
 ];
 
-export const routes: ModuleWithProviders = RouterModule.forRoot(router);
+//export const routes: ModuleWithProviders = RouterModule.forRoot(router);
+
+@NgModule({
+  imports: [ RouterModule.forRoot(routes) ],
+  exports: [ RouterModule ]
+})
+export class AppRoutingModule {
+
+}
