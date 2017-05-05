@@ -17,6 +17,8 @@ import { BodyComponent } from './home/body/body.component';
 import { MakeUpComponent } from './make-up/make-up.component';
 import { AccessoriesComponent } from './accessories/accessories.component';
 import { ProductComponent } from './product/product.component';
+import { ProductShowComponent } from './product/product-show.component';
+import { ProductNewComponent } from './product/product-new.component';
 import { ProductService } from './product/product.service';
 import { ServiceComponent } from './service/service.component'
 import { ServiceService } from './service/service.service';
@@ -39,6 +41,8 @@ import { AgendaComponent } from './agenda/agenda.component';
     MakeUpComponent,
     AccessoriesComponent,
     ProductComponent,
+    ProductShowComponent,
+    ProductNewComponent,
     SkinCareComponent,
     FragancesComponent,
     BodyCareComponent,

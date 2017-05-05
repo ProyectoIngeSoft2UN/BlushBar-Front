@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { MakeUpComponent } from './make-up/make-up.component';
 import { AccessoriesComponent } from './accessories/accessories.component';
 import { ProductComponent } from './product/product.component';
+import { ProductShowComponent } from './product/product-show.component';
+import { ProductNewComponent } from './product/product-new.component';
 import { ServiceComponent } from './service/service.component';
 import { BodyCareComponent } from './body-care/body-care.component';
 import { FragancesComponent } from './fragances/fragances.component';
@@ -21,6 +23,8 @@ export const router: Routes = [
   { path: 'make-up', component: MakeUpComponent },
   { path: 'accessories', component: AccessoriesComponent },
   { path: 'product', component: ProductComponent },
+  { path: 'product/:id', component: ProductShowComponent },
+  { path: 'product/new', component: ProductNewComponent },
   { path: 'service', component: ServiceComponent },
   { path: 'body-care', component: BodyCareComponent },
   { path: 'fragances', component: FragancesComponent },
