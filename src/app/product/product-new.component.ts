@@ -13,11 +13,11 @@ import { ProductService } from './product.service';
 
 export class ProductNewComponent {
   product = new Product;
-  submitted: boolean = false;
+  submitted: boolean = false; //check if the form is submitted
 
   constructor(private productService: ProductService){}
 
-  /*createProduct(product: Product){
+  createProduct(product: Product){
     this.submitted = true;
     this.productService.createProduct(product).subscribe(data => {return true},
       error =>{
@@ -25,6 +25,6 @@ export class ProductNewComponent {
         return Observable.throw(error);
       }
     )
-  }*/
+  }
 
 }

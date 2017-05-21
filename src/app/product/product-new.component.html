@@ -1,1 +1,101 @@
-<h1>Products Create</h1>
+<div class="">
+  <div class="container">
+    <h1 class="display-3 align-center">Create a New Product</h1>
+  </div>
+</div>
+
+<div class="">
+  <div class="row">
+    <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+      <form (ngSubmit)="createProduct(product); productForm.reset()" #productForm='ngForm'>
+        <div class="form-group">
+          <label for="name">
+            <h3>
+              Name
+            </h3>
+          </label>
+          <input type="text" class="form-control" id="name" placeholder="e.g Build a Website"
+          required
+          name="name"
+          #name='ngModel'
+          [(ngModel)]='product.name'
+          >
+          <!--<div [hidden]="title.valid ||   title.pristine"
+          class="alert alert-danger">
+          Name of project is required
+        </div>-->
+        </div>
+
+        <div class="form-group">
+          <label for="description">
+            <h3>Descripcion</h3>
+          </label>
+          <input type="text" class="form-control" id="description" placeholder=""
+          required
+          name="description"
+          #description='ngModel'
+          [(ngModel)]='product.description'
+          >
+          <!--<div [hidden]="title.valid ||   title.pristine"
+          class="alert alert-danger">
+          Name of project is required
+        </div>-->
+        </div>
+
+        <div class="form-group">
+          <label for="subcategory_id">
+            <h3>
+              Category
+            </h3>
+          </label>
+          <input type="text" class="form-control" id="subcategory_id" placeholder=""
+          required
+          name="subcategory_id"
+          #subcategory_id ='ngModel'
+          [(ngModel)]='product.subcategory_id'
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="brand">
+            <h3>Brand</h3>
+          </label>
+          <input type="text" class="form-control" id="brand" placeholder=""
+          required
+          name="brand"
+          #brand='ngModel'
+          [(ngModel)]='product.brand'
+          >
+          <!--<div [hidden]="title.valid ||   title.pristine"
+          class="alert alert-danger">
+          Name of project is required
+        </div>-->
+        </div>
+
+        <div class="form-group">
+          <label for="subcategory_id">
+            <h3>
+              Category
+            </h3>
+          </label>
+          <input type="text" class="form-control" id="subcategory_id" placeholder=""
+          required
+          name="subcategory_id"
+          #subcategory_id ='ngModel'
+          [(ngModel)]='product.subcategory_id'
+          >
+        </div>
+
+        <button type="submit" class="btn btn-primary" [disabled]="!productForm.form.valid"
+        [hidden]="submitted">
+        Post Project</button>
+
+        <!-- Stay hidden until submitted -->
+        <!--<div [hidden]="!submitted"
+        class="alert alert-success" role="alert">
+        Your Project has been successfully created. <a class="alert-link" routerLink="/projects"> View all Projects </a>
+      </div>-->
+      </form>
+    </div>
+  </div>
+</div>

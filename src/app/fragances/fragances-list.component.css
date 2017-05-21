@@ -1,9 +1,4 @@
 
-.container {
-	margin-top: 50px;
-
-}
-
 .tcb-product-item a {
   color: #147196;
 }
@@ -25,14 +20,11 @@
   display: inline-block;
 }
 .tcb-product-info {
-  background: white;
-  text-align: center;
-  padding: 0px;
-  margin: 20px 20px
+  background: #f0f0f0;
+  padding: 15px;
 }
 .tcb-product-title h4 {
-  color: black;
-  margin-bottom: 20px;
+  margin-top: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -41,7 +33,7 @@
   color: #acacac;
 }
 .tcb-product-rating .active {
-  color: #ff9999;
+  color: #FFB500;
 }
 .tcb-product-price {
   color: firebrick;

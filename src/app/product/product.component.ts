@@ -7,22 +7,31 @@ import { ProductService } from './product.service';
 @Component({
   selector: 'app-product',
   templateUrl: '/product.component.html',
-  styleUrls: ['./product.component.css']
+  styleUrls: ['./product-list.component.css']
 })
 export class ProductComponent implements OnInit {
   products: Product[];
+  selectedProduct: Product;
+
   constructor(
     private productService: ProductService,
     private router: Router
   ) { }
 
+  getProducts(){
+    this.productService.getProducts().subscribe(products => this.products = products);
+  }
+
+
+
   ngOnInit() {
     let timer = Observable.timer(0, 5000);
     timer.subscribe(() => this.getProducts())
+    //this.getProducts()
   }
 
-  getProducts(){
-    this.productService.getProducts().subscribe(products => this.products = products);
+  onSelect(product: Product): void {
+    this.selectedProduct = product;
   }
 
   goToShow(product: Product): void{

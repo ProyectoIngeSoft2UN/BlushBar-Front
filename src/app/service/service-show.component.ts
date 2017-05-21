@@ -1,18 +1,18 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Http } from '@angular/http';
-import { Product } from './product';
-import { ProductService } from './product.service';
+import { Service } from './service';
+import { ServiceService } from './service.service';
 
 @Component({
   selector: 'product-show',
-  templateUrl: 'product-show.component.html',
-  styleUrls: ['./product.component.css']
+  templateUrl: 'service-show.component.html',
+  styleUrls: ['./service.component.css']
 })
 
-export class ProductShowComponent implements OnInit{
-  @Input() product: Product;
+export class ServiceShowComponent implements OnInit{
 
+  @Input() service: Service;
   id: number;
   routeId: any;
   errorMessage: any;
@@ -23,20 +23,20 @@ export class ProductShowComponent implements OnInit{
     private http: Http,
     private route: ActivatedRoute,
     private router: Router,
-    private productService: ProductService
+    private serviceService: ServiceService
   ){}
 
 
 
   ngOnInit(){
-    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/products';
+    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/services';
     this.routeId = this.route.params.subscribe(
       params => {
         this.id = +params['id'];
       }
     )
-    let productRequest = this.route.params.flatMap((params: Params) => this.productService.getProduct(+params['id']));
-    productRequest.subscribe(response => this.product = response.json());
+    let serviceRequest = this.route.params.flatMap((params: Params) => this.serviceService.getService(+params['id']));
+    serviceRequest.subscribe(response => this.service = response.json());
   }
 
   /*ngOnInit() {
