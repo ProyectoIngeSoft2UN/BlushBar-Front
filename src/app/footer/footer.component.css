@@ -1,0 +1,60 @@
+
+
+/************************************************************
+*************************Footer******************************
+*************************************************************/
+
+
+footer {
+    height: 220px;
+    padding: 50px 0;
+
+
+}
+
+
+
+footer div div {
+  border-style: solid;
+  border-width: 0px 0px 0px 5px;
+  border-color: #ff9999;
+  height: 2200;
+}
+
+
+
+.footerp p {font-family: 'Gudea', sans-serif; }
+
+
+
+
+
+
+.footer-bottom {
+    background-color: #595959;
+    min-height: 30px;
+    width: 100%;
+    position: relative;
+    bottom: 10px;
+}
+.copyright {
+    color: #ff9999;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+.design {
+    color: #ff9999;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+}
+.design a {
+    color: #ff9999;
+}
+
+
+/************************************************************
+*************************Footer******************************
+*************************************************************/

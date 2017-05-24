@@ -9,3 +9,13 @@ div.back {
 p a {
 	color: #ff80aa;
 }
+
+div.container {
+  padding-top: 10px;
+  background-color: #ffe6e6;
+  background-image: image(,/img/images.png);
+}
+
+.thumbnail {
+  border-style: none;
+}

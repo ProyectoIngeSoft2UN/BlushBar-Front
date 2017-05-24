@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Observable } from 'rxjs/Rx';
 import { Service } from './service';
 import { ServiceService } from './service.service';
@@ -10,7 +11,12 @@ import { ServiceService } from './service.service';
 })
 export class ServiceComponent implements OnInit {
   services: Service[];
-  constructor(private serviceService: ServiceService) { }
+  selectedService: Service;
+
+  constructor(
+    private serviceService: ServiceService,
+    private router: Router
+  ) { }
 
   ngOnInit() {
     let timer = Observable.timer(0, 5000);
@@ -19,4 +25,13 @@ export class ServiceComponent implements OnInit {
   getServices(){
     this.serviceService.getServices().subscribe(services => this.services = services);
   }
+
+  onSelect(service: Service): void {
+    this.selectedService = service;
+  }
+
+  serviceShow(service: Service): void {
+    this.router.navigate(['/services', service.id]);
+  }
+
 }

@@ -1,18 +1,62 @@
-<div *ngIf="product">
+<!--<div *ngIf="product">
   <div class="container">
     <div class="row row-content">
-        <div class="col-xs-12 col-sm-6">
-            <div class="thumbnail media">
+      <div class="col-xs-12 col-sm-6">
+        <div class="thumbnail media">
+          <img class="media-object img-thumbnail" src="./src/app/info/img/fachadaBB.jpg" alt="...">
+          <div class="caption">
+            <div class="media-body media-center">
+              <h2 class="media-heading">{{product.name}} </h2>
+              <p>{{product.description}}Aqui</p>
+              <p> ${{product.cost}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>-->
+
+<div *ngIf="product">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <body>
+    <div id="wrap">
+      <div id="product_layout_1">
+        <div class="top">
+          <div class="product_images">
+
               <img class="media-object img-thumbnail" src="./src/app/info/img/fachadaBB.jpg" alt="...">
-              <div class="caption">
-                <div class="media-body media-center">
-                  <h2 class="media-heading">{{product.name}} </h2>
-                  <p>{{product.description}}</p>
-                  <p> ${{product.cost}}</p>
+
+
+          </div>
+          <div class="product_info">
+            <h1>{{product.name}}</h1>
+            <div class="price">
+              <h2 class="original_price"></h2>
+              <h2 class="sale_price">${{product.cost}}</h2>
+            </div>
+            <div class="rating">
+              <i class="fa fa-star fa-3x"></i><i class="fa fa-star fa-3x"></i><i class="fa fa-star fa-3x"></i><i class="fa fa-star-half-o fa-3x"></i><i class="fa fa-star-o fa-3x"></i>
+            </div>
+            <div class="product_description">
+              <p>{{product.description}}</p>
+
+            </div>
+            <div class="related_info">
+              <span class="sku">SKU:1234567</span><span class="quantity">QTY:85</span>
+            </div>
+            <div class="options">
+              <div class="buying">
+
+                <div class="cart">
+                  <a href="#" class="add">Add to Cart <i class="fa fa-shopping-cart fa-lg"></i></a>
                 </div>
               </div>
-            </div>
-        </div>
-  </div>
 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </div>

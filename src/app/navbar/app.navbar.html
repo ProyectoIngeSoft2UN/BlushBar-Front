@@ -1,44 +1,46 @@
 <div class="container">
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
 
-<!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-        </button>
+      <a class="center" routerLink="home"><img src="./src/app/navbar/bb.png" alt=""></a>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a routerLink="product/new" id="mybtn1">
+        <span class="glyphicon glyphicon-log-in"></span> Iniciar Sesión</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <a routerLink="info">Contáctanos</a>
+      </li>
+    </ul>
+  </div>
+</div>
 
-    </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><a routerLink="home">Blush-Bar</a></li>
-          <!--<li><a routerLink="product">Maquillaje</a></li>-->
-          <li><a routerLink="product">Maquillaje</a></li>
-          <li><a routerLink="skin-care">Cuidado de piel</a></li>
-          <li><a routerLink="fragances">Fragancias</a></li>
-          <li><a routerLink="body-care">Cuidado corporal</a></li>
-          <li><a routerLink="accessories">Accesorios</a></li>
           <!--<li><a routerLink="service">Servicios BB</a></li>-->
-          <li><a routerLink="agenda">Agenda</a></li> <!--Editado por Juliana-->
-
-
-        </ul>
-
-        <ul class="nav navbar-nav navbar-right">
-          <!--<li><a data-toggle="modal" data-target="#loginModal">-->
-          <!--Without the data attributes and using custom javascript code-->
-          <li><a id="mybtn1">
-            <span class="glyphicon glyphicon-log-in"></span> Inicia Sesión</a>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a routerLink="info">Contáctanos</a>
-          </li>
-        </ul>
-
-    </div>
-            <!-- /.navbar-collapse -->
+<div class="container masthead">
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li><a routerLink="home"></a></li>
+      <li><a routerLink="home">Blush-Bar</a></li>
+      <!--<li><a routerLink="product">Maquillaje</a></li>-->
+      <li><a routerLink="product">Maquillaje</a></li>
+      <li><a routerLink="skin-care">Cuidado de piel</a></li>
+      <li><a routerLink="fragances">Fragancias</a></li>
+      <li><a routerLink="body-care">Cuidado corporal</a></li>
+      <li><a routerLink="accessories">Accesorios</a></li>
+      <!--<li><a routerLink="service">Servicios BB</a></li>-->
+      <li><a routerLink="agenda">Agenda</a></li>
+    </ul>
+    <!--<ul class="nav navbar-nav navbar-right">
+    <li><a routerLink="product/new" id="mybtn1">
+    <span class="glyphicon glyphicon-log-in"></span> Inicia Sesión</a>
+  </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+<a routerLink="info">Contáctanos</a>
+</li>
+</ul>-->
+</div>
 </div>

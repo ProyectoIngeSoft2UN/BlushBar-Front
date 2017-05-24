@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { CalendarComponent } from "ap-angular2-fullcalendar/src/calendar/calendar";//acá editó Juliana
 
-import { routes } from './app.router';
+import { AppRoutingModule } from './app.router';
 
 import { AppComponent } from './app.component';
 import { navbarComponent } from './navbar/app.navbarComponent';
@@ -21,6 +21,7 @@ import { ProductShowComponent } from './product/product-show.component';
 import { ProductNewComponent } from './product/product-new.component';
 import { ProductService } from './product/product.service';
 import { ServiceComponent } from './service/service.component'
+import { ServiceShowComponent } from './service/service-show.component'
 import { ServiceService } from './service/service.service';
 import { SkinCareComponent } from './skin-care/skin-care.component';
 import { FragancesComponent } from './fragances/fragances.component';
@@ -47,13 +48,15 @@ import { AgendaComponent } from './agenda/agenda.component';
     FragancesComponent,
     BodyCareComponent,
     ServiceComponent,
-    AgendaComponent
+    AgendaComponent,
+    ServiceShowComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    routes
+    ReactiveFormsModule,
+    AppRoutingModule,
+    HttpModule
   ],
   providers: [
     ProductService,
