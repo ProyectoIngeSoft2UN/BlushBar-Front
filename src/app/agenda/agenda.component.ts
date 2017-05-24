@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core'; //Editado por Juliana todo el
 
 export class AgendaComponent{
     calendarOptions:Object = {
-        height: 'parent',
+        height: 'auto',
         fixedWeekCount : false,
         defaultDate: '2016-09-12',
         editable: true,
