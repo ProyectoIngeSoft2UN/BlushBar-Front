@@ -14,11 +14,57 @@
 
   <link href="css/landing-page.css" rel="stylesheet">
 
+  <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous">
+  </script>
+
+
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.7/semantic.min.js"></script>
-
+  <style>
+        #map {
+          width: 100%;
+          height: 400px;
+          background-color: grey;
+        }
+      </style>
+      <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous">
+      </script>
+      <script type="text/javascript">
+      var marker;
+      var map;
+      function initMap(){
+        var mapDiv = document.getElementById('map');
+        map = new google.maps.Map(mapDiv, {
+          center: {lat: 41.8708, lng: -87.6505},
+          zoom: 16});
+        marker = new google.maps.Marker({ //Line 1
+          position: {lat: 41.8708, lng: -87.6505}, //Line2: Location to be highlighted
+          map: map,//Line 3: Reference to map object
+          title: 'Purdue University' //Line 4: Title to be given
+        })
+  	  }
+      $.ajax({
+        url: "https://data.cityofchicago.org/resource/uahe-iimk.json",
+        type: "GET",
+        data: {
+          "$$app_token" : "z0AQpOQziYasoMXGDpiTaPXF2"
+        },
+        success: function(data) {
+          // console.log("Retrieved " + data.length + " records from the dataset!");
+          $.each(data,function(index, val) {
+            console.log(val.latitude);
+            //latLng = new google.maps.LatLng(val.latitude,val.longitude)
+            marker = new google.maps.Marker({ //Line 1
+              position: {lat: Number(val.latitude), lng: Number(val.longitude)}, //Line2: Location to be highlighted
+              map: map,//Line 3: Reference to map object
+              title: 'Rent houses' //Line 4: Title to be given
+            })
+          });
+        }
+      });
+      </script>
 
 
 </head>
@@ -39,6 +85,8 @@
   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
   crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe8DmJyupHpBB8uAaojEmWajueQJW1FvQ&callback=initMap">
+    </script>
 </body>
 </html>
