@@ -22,6 +22,7 @@ import { ProductService } from './product/product.service';
 import { ServiceComponent } from './service/service.component'
 import { ServiceShowComponent } from './service/service-show.component'
 import { ServiceService } from './service/service.service';
+import { ServiceNewComponent } from './service/service-new.component';
 import { SkinCareComponent } from './skin-care/skin-care.component';
 import { FragancesComponent } from './fragances/fragances.component';
 import { BodyCareComponent } from './body-care/body-care.component';
@@ -44,7 +45,8 @@ import { BodyCareComponent } from './body-care/body-care.component';
     FragancesComponent,
     BodyCareComponent,
     ServiceComponent,
-    ServiceShowComponent
+    ServiceShowComponent,
+    ServiceNewComponent
   ],
   imports: [
     BrowserModule,

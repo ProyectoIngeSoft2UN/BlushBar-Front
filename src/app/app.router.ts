@@ -12,6 +12,7 @@ import { ProductShowComponent } from './product/product-show.component';
 import { ProductNewComponent } from './product/product-new.component';
 import { ServiceComponent } from './service/service.component';
 import { ServiceShowComponent } from './service/service-show.component';
+import { ServiceNewComponent } from './service/service-new.component';
 import { BodyCareComponent } from './body-care/body-care.component';
 import { FragancesComponent } from './fragances/fragances.component';
 import { SkinCareComponent } from './skin-care/skin-care.component';
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'product/new', component: ProductNewComponent },
   { path: 'service', component: ServiceComponent },
   { path: 'services/:id', component: ServiceShowComponent },
+  { path: 'service/new', component: ServiceNewComponent },
   { path: 'body-care', component: BodyCareComponent },
   { path: 'fragances', component: FragancesComponent },
   { path: 'skin-care', component: SkinCareComponent }
