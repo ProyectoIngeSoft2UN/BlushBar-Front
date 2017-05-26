@@ -3,13 +3,11 @@ import { Observable } from 'rxjs/Rx';
 import { Product } from './product';
 import { ProductService } from './product.service';
 
-
 @Component({
   selector: 'new-product',
   templateUrl: '/product-new.component.html',
   styleUrls: ['./product.component.css']
 })
-
 
 export class ProductNewComponent {
   product = new Product;
